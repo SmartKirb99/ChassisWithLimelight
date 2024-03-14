@@ -1,6 +1,6 @@
 //Code below written using Copilot:
 
-package frc.robot.commands;
+package frc.robot.commands.DrivingCommands;
 
 import frc.robot.Constants.DriveConstants;
 import frc.robot.subsystems.DriveSubsystem;

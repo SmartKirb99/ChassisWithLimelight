@@ -1,0 +1,41 @@
+Loop time of 0.02s overrun
+Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:412): Loop time of 0.02s overrun
+Enter the Apriltag ID you are looking for:
+Unhandled exception: java.util.NoSuchElementException
+Error at java.base/java.util.Scanner.throwFor(Unknown Source): Unhandled exception: java.util.NoSuchElementException
+The robot program quit unexpectedly. This is usually due to a code error.
+The above stacktrace can help determine where the error occurred.
+See https://wpilib.org/stacktrace for more information.
+at java.base/java.util.Scanner.throwFor(Unknown Source)
+The startCompetition() method (or methods called by it) should have handled the exception above.
+at java.base/java.util.Scanner.next(Unknown Source)
+at java.base/java.util.Scanner.nextDouble(Unknown Source)
+at frc.robot.commands.TuringViewing.ApriltagPicking.execute(ApriltagPicking.java:31)
+at edu.wpi.first.wpilibj2.command.CommandScheduler.run(CommandScheduler.java:285)
+at frc.robot.Robot.robotPeriodic(Robot.java:21)
+at edu.wpi.first.wpilibj.IterativeRobotBase.loopFunc(IterativeRobotBase.java:381)
+at edu.wpi.first.wpilibj.TimedRobot.startCompetition(TimedRobot.java:131)
+at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:366)
+at edu.wpi.first.wpilibj.RobotBase.startRobot(RobotBase.java:458)
+at frc.robot.Main.main(Main.java:23)
+Warning at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:380): The robot program quit unexpectedly. This is usually due to a code error.
+The above stacktrace can help determine where the error occurred.
+See https://wpilib.org/stacktrace for more information.
+Error at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:387): The startCompetition() method (or methods called by it) should have handled the exception above.
+[phoenix-diagnostics] Server shutdown cleanly. (dur:0)
+[phoenix] Library shutdown cleanly
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+# SIGSEGV (0xb) at pc=0xb6e35c44, pid=3914, tid=3918
+#
+# JRE version: OpenJDK Runtime Environment (17.0.9.7) (build 17.0.9.7-frc+0-2024-17.0.9u7-1)
+# Java VM: OpenJDK Client VM (17.0.9.7-frc+0-2024-17.0.9u7-1, mixed mode, emulated-client, serial gc, linux-arm)
+# Problematic frame:
+# C [libc.so.6+0x6ac44]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /tmp/hs_err_pid3914.log
+FPGA not yet configured in wpi::Now(). Time will not be correct.

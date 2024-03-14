@@ -1,5 +1,10 @@
 package frc.robot;
 
+
+import edu.wpi.first.math.geometry.Rotation2d;
+import edu.wpi.first.math.geometry.Translation2d;
+import edu.wpi.first.math.util.Units;
+
 public final class Constants {
 
   public static final class DriveConstants {
@@ -18,6 +23,17 @@ public final class Constants {
 
     public static final int kArcadeDriveSpeedAxis = 1;
     public static final int kArcadeDriveTurnAxis = 3;
+
+    public static int kOperatorController = 1;
   }
+
+  public static final class LimelightConstants {
+
+	public static double kGoalHeightMeters = Units.inchesToMeters(57.88);
+    public static double kLimelightLensHeightMeters = 0.2;
+    public static double kMountAngleRadians = Units.degreesToRadians(0);
+
+  }
+
 
 }
