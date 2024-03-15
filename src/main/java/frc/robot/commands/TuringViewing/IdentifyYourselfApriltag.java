@@ -22,8 +22,8 @@ public class IdentifyYourselfApriltag extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    if (LimelightHelpers.getTV("")){
-      System.out.println("The ID is " + LimelightHelpers.getFiducialID(""));
+    if (LimelightHelpers.getTV("limelight-shooter")){
+      System.out.println("The ID is " + LimelightHelpers.getFiducialID("limelight-shooter"));
     } else {
       System.out.println("There is no visible Apriltag");
     }
@@ -40,4 +40,4 @@ public class IdentifyYourselfApriltag extends Command {
     return true;
   }
 }
-// Ah um well you see... this is meant to give the ID when the 2nd button on the button board is pressed
+// Ah um well you see... this is meant to give the ID when the 1st button on the button board is pressed

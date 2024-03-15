@@ -27,17 +27,17 @@ public class Limelight extends SubsystemBase {
   }
 
   public double getTX() {
-    return LimelightHelpers.getTX("");
+    return LimelightHelpers.getTX("limelight-shooter");
   }
 
   public double getTY() {
-    return LimelightHelpers.getTY("");
+    return LimelightHelpers.getTY("limelight-shooter");
   }
 
   public boolean hasCorrectTarget() {
-    if (DriverStation.getAlliance().get() == Alliance.Blue && LimelightHelpers.getFiducialID("") == 7) {
+    if (DriverStation.getAlliance().get() == Alliance.Blue && LimelightHelpers.getFiducialID("limelight-shooter") == 7) {
       return true;
-    } else if (DriverStation.getAlliance().get() == Alliance.Red && LimelightHelpers.getFiducialID("") == 4) {
+    } else if (DriverStation.getAlliance().get() == Alliance.Red && LimelightHelpers.getFiducialID("limelight-shooter") == 4) {
       return true;
     } else {
       return false;
@@ -46,9 +46,9 @@ public class Limelight extends SubsystemBase {
 
   private void setCorrectTarget() {
     if (DriverStation.getAlliance().get() == Alliance.Blue) {
-      LimelightHelpers.setPriorityTagID("", 7);
+      LimelightHelpers.setPriorityTagID("limelight-shooter", 7);
     } else if (DriverStation.getAlliance().get() == Alliance.Red) {
-      LimelightHelpers.setPriorityTagID("", 4);
+      LimelightHelpers.setPriorityTagID("limelight-shooter", 4);
     } else {
       DriverStation.reportError("Did not get alliance to setup Limelight.", true);
     }

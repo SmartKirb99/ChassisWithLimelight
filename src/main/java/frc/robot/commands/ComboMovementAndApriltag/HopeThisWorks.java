@@ -25,11 +25,12 @@ public class HopeThisWorks extends SequentialCommandGroup {
     // addCommands(new FooCommand(), new BarCommand());
     
 
-    if (LimelightHelpers.getFiducialID("") == 7){
+    if (LimelightHelpers.getFiducialID("limelight-shooter") == 7){
+      
       addCommands(
         new DriveForwardTimed(drive, 1)
       );
-    } else if (LimelightHelpers.getFiducialID("") == 8) {
+    } else if (LimelightHelpers.getFiducialID("limelight-shooter") == 8) {
       addCommands(
         new TurningTime(drive, 1)
       );
@@ -39,3 +40,4 @@ public class HopeThisWorks extends SequentialCommandGroup {
     
   }
 }
+// 2nd button
